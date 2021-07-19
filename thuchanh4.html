@@ -15,8 +15,8 @@
   let arr4 = [0, 0, 0, 0, 0, 0]
 
   function minArray(arr) {
-    if(arr.length == 0)
-      return -1;
+    if(arr.length == 0){
+      return -1;}
     let min = arr[0];
 
     for(let i = 1; i < arr.length; i++){
@@ -24,10 +24,10 @@
         min = arr[i];
       }
     }
-    return arr.indexOf(min);
+    return min;
   }
-  let min = minArray(arr4);
-  alert(arr4[min])
+  let min = minArray(arr3);
+  alert(min)
 </script>
 </body>
 </html>

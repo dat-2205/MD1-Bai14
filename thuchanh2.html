@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let a = [10,3,5,13,56,12,1,-2]
+
+  for(i=0;i<(a.length-1);i++) {
+    for(j=i+1;j<a.length; j++){
+        if(a[i]<a[j]){
+            let temp = a[i];
+            a[i] = a[j];
+            a[j] = temp;
+        }
+     }
+  }
+  console.log(a)
+</script>
+</body>
+</html>
